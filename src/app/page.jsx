@@ -179,7 +179,7 @@ export default function HomePage() {
               alt={slide.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 z-20 flex flex-col justify-end pb-8 sm:pb-16 md:pb-20">
+            <div className="absolute inset-0 z-20 flex flex-col justify-center md:justify-end pb-16 md:pb-20">
               <div className="max-w-7xl mx-auto px-4 w-full">
                 <div className="max-w-2xl">
                   <div className="flex items-center space-x-3 mb-6">
@@ -187,10 +187,10 @@ export default function HomePage() {
                     <div className="w-12 h-1 bg-[#E73138]"></div>
                     <div className="w-12 h-1 bg-[#FCD116]"></div>
                   </div>
-                  <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white mb-6 leading-tight">
+                  <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-gray-200 mb-8">
+                  <p className="text-base sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-8">
                     {slide.subtitle}
                   </p>
                   <div className="flex flex-wrap gap-4">
