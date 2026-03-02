@@ -98,7 +98,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gray-50 overflow-x-hidden">
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 md:pt-48 md:pb-40 bg-[#007A5E]">
+      <section className="relative h-screen pt-32 pb-24 md:pt-48 md:pb-40 bg-[#007A5E]">
         <div className="absolute inset-0 opacity-10">
           <img
             src="https://cameroonbusinessawards.org/wp-content/uploads/2024/11/pexels-kelly-1179532-17290978-300x300.jpg"
