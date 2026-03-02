@@ -165,7 +165,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Slider */}
-      <div className="relative h-screen overflow-hidden">
+      <div className="relative h-screen max-h-screen overflow-hidden">
         {heroSlides.map((slide, index) => (
           <div
             key={index}
@@ -187,10 +187,10 @@ export default function HomePage() {
                     <div className="w-12 h-1 bg-[#E73138]"></div>
                     <div className="w-12 h-1 bg-[#FCD116]"></div>
                   </div>
-                  <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                  <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 mb-8">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-8">
                     {slide.subtitle}
                   </p>
                   <div className="flex flex-wrap gap-4">
