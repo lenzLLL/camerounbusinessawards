@@ -98,7 +98,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gray-50 overflow-x-hidden">
 
       {/* Hero Section */}
-      <section className="relative h-[90vh] md:h-screen pt-4 pb-12 sm:pt-32 sm:pb-24 md:pt-48 md:pb-40 bg-[#007A5E]">
+      <section className="relative h-[90vh] md:h-screen pt-32 pb-24 md:pt-48 md:pb-40 bg-[#007A5E]">
         <div className="absolute inset-0 opacity-10">
           <img
             src="https://cameroonbusinessawards.org/wp-content/uploads/2024/11/pexels-kelly-1179532-17290978-300x300.jpg"
@@ -119,7 +119,7 @@ export default function AboutPage() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl sm:text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter"
+            className="text-3xl sm:text-4xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter"
           >
             L'Excellence <br />{" "}
             <span className="text-[#FCD116]">Made in Cameroon</span>
@@ -128,7 +128,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
             Découvrez l'histoire, la vision et l'engagement des Cameroon
             Business Awards pour la transformation économique de notre nation.
