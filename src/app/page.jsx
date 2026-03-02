@@ -165,7 +165,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Slider */}
-      <div className="relative h-screen max-h-screen overflow-hidden">
+      <div className="relative h-[90vh] md:h-screen overflow-hidden">
         {heroSlides.map((slide, index) => (
           <div
             key={index}
