@@ -185,10 +185,10 @@ export default function HomePage() {
                     <div className="w-12 h-1 bg-[#E73138]"></div>
                     <div className="w-12 h-1 bg-[#FCD116]"></div>
                   </div>
-                  <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                  <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-xl md:text-2xl text-gray-200 mb-8">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 mb-8">
                     {slide.subtitle}
                   </p>
                   <div className="flex flex-wrap gap-4">
@@ -247,7 +247,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div
-                  className="text-4xl font-bold mb-2"
+                  className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2"
                   style={{ color: stat.color }}
                 >
                   {stat.number}
@@ -267,10 +267,10 @@ export default function HomePage() {
               <div className="inline-block px-4 py-2 bg-[#008751]/10 text-[#008751] rounded-full text-sm font-semibold mb-6">
                 Notre Identité
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Cameroon Business Awards
               </h2>
-              <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
                 Événement national de promotion du{" "}
                 <span className="font-bold text-[#008751]">
                   Made in Cameroon
@@ -338,7 +338,7 @@ export default function HomePage() {
             <div className="inline-block px-6 py-3 bg-white/20 backdrop-blur-md rounded-full text-sm font-semibold mb-8">
               Thème 2024
             </div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-8 leading-tight">
               « Import-substitution, outil d'accélération de croissance »
             </h2>
             <div className="grid md:grid-cols-4 gap-6 mt-12">
@@ -368,10 +368,10 @@ export default function HomePage() {
             <div className="inline-block px-4 py-2 bg-[#E73138]/10 text-[#E73138] rounded-full text-sm font-semibold mb-4">
               Nos Objectifs
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Pourquoi le CBA ?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               Un catalyseur de croissance et un pont entre producteurs,
               transformateurs, investisseurs et institutions
             </p>
@@ -404,7 +404,7 @@ export default function HomePage() {
             <div className="inline-block px-4 py-2 bg-[#FCD116]/20 text-[#8B6F00] rounded-full text-sm font-semibold mb-4">
               Lauréats Principaux 2024
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Les Grands Gagnants
             </h2>
           </div>
@@ -415,8 +415,8 @@ export default function HomePage() {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-t-4"
                 style={{ borderTopColor: winner.color }}
               >
-                <div className="text-5xl mb-4">{winner.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <div className="text-3xl sm:text-4xl md:text-5xl mb-4">{winner.icon}</div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
                   {winner.name}
                 </h3>
                 <div
@@ -435,7 +435,7 @@ export default function HomePage() {
 
           {/* Other Winners */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
               Autres Lauréats Notables
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -476,7 +476,7 @@ export default function HomePage() {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="hidden sm:block absolute -top-6 -right-6 bg-[#E73138] text-white p-6 rounded-xl shadow-xl">
-                <div className="text-3xl font-bold mb-1">66.5M</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">66.5M</div>
                 <div className="text-sm">Budget Incubation 2025</div>
               </div>
             </div>
@@ -484,10 +484,10 @@ export default function HomePage() {
               <div className="inline-block px-4 py-2 bg-[#008751]/10 text-[#008751] rounded-full text-sm font-semibold mb-6">
                 Bootcamp & Incubation
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Accompagnement vers l'Excellence
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8">
                 Un programme intensif pour transformer les projets en
                 entreprises structurées et compétitives
               </p>
@@ -556,7 +556,7 @@ export default function HomePage() {
             <div className="inline-block px-4 py-2 bg-[#008751]/10 text-[#008751] rounded-full text-sm font-semibold mb-4">
               Nos Partenaires
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Ensemble pour le Cameroun
             </h2>
           </div>

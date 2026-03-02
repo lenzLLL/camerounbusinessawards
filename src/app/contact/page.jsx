@@ -6,10 +6,10 @@ export default function ContactPage() {
     <div className="pt-20">
       <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-[#1A1A1A]">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1A1A1A]">
             Contactez-<span className="text-[#008751]">Nous</span>
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600">
             Une question ? Un projet ? Notre équipe est à votre écoute pour vous
             accompagner.
           </p>
@@ -21,7 +21,7 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="space-y-12">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold">Nos Coordonnées</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">Nos Coordonnées</h2>
               <p className="text-gray-500">
                 Retrouvez-nous dans nos bureaux ou contactez-nous par téléphone.
               </p>
@@ -33,7 +33,7 @@ export default function ContactPage() {
                   <MapPin size={28} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">Adresse</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1">Adresse</h3>
                   <p className="text-gray-600">
                     Immeuble CBA, Rue de l'Indépendance, Douala, Cameroun
                   </p>
@@ -45,7 +45,7 @@ export default function ContactPage() {
                   <Phone size={28} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">Téléphone</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1">Téléphone</h3>
                   <p className="text-gray-600">
                     +237 600 000 000 / +237 200 000 000
                   </p>
@@ -57,7 +57,7 @@ export default function ContactPage() {
                   <Mail size={28} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-1">Email</h3>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1">Email</h3>
                   <p className="text-gray-600">
                     info@cameroonbusinessawards.cm
                     <br />
@@ -72,7 +72,7 @@ export default function ContactPage() {
               <div className="absolute top-0 right-0 p-4 opacity-20">
                 <MessageSquare size={100} />
               </div>
-              <h3 className="text-2xl font-bold">Support Rapide</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Support Rapide</h3>
               <p className="text-gray-400">
                 Nous répondons généralement en moins de 24 heures ouvrées.
               </p>

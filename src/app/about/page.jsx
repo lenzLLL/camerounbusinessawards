@@ -32,7 +32,7 @@ const SectionHeading = ({ children, subtitle, light = false }) => (
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className={`text-3xl md:text-4xl font-black mb-4 uppercase tracking-tighter ${light ? "text-white" : "text-gray-900"}`}
+      className={`text-2xl sm:text-3xl md:text-4xl font-black mb-4 uppercase tracking-tighter ${light ? "text-white" : "text-gray-900"}`}
     >
       {children}
     </motion.h2>
@@ -76,14 +76,14 @@ const MinisterQuote = ({ name, title, quote, image, reverse = false }) => (
     </div>
     <div className="w-full md:w-2/3">
       <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100 relative">
-        <span className="absolute top-4 left-4 text-6xl text-gray-100 font-serif leading-none">
+        <span className="absolute top-4 left-4 text-4xl sm:text-5xl text-gray-100 font-serif leading-none">
           "
         </span>
-        <p className="text-gray-700 text-lg md:text-xl italic leading-relaxed mb-6 relative z-10">
+        <p className="text-gray-700 text-base sm:text-lg md:text-xl italic leading-relaxed mb-6 relative z-10">
           {quote}
         </p>
         <div className="border-t border-gray-100 pt-6">
-          <h4 className="text-xl font-bold text-gray-900">{name}</h4>
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-gray-900">{name}</h4>
           <p className="text-[#007A5E] font-semibold uppercase text-sm tracking-widest">
             {title}
           </p>
@@ -119,7 +119,7 @@ export default function AboutPage() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter"
+            className="text-3xl sm:text-4xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter"
           >
             L'Excellence <br />{" "}
             <span className="text-[#FCD116]">Made in Cameroon</span>
@@ -128,7 +128,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
             Découvrez l'histoire, la vision et l'engagement des Cameroon
             Business Awards pour la transformation économique de notre nation.
@@ -149,16 +149,16 @@ export default function AboutPage() {
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <div className="w-full lg:w-1/2">
                 <div className="mb-6">
-                  <span className="text-xl font-bold text-[#CE1126] uppercase tracking-[0.2em]">
+                  <span className="text-base sm:text-lg md:text-xl font-bold text-[#CE1126] uppercase tracking-[0.2em]">
                     Sous le Haut Patronage
                   </span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-8 uppercase leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-gray-900 mb-8 uppercase leading-tight">
                   S.E.M. Paul BIYA
                 </h2>
                 <div className="space-y-6">
                   <div className="bg-white p-6 rounded-2xl border-l-8 border-[#007A5E] shadow-lg">
-                    <p className="text-xl text-gray-700 italic font-serif leading-relaxed">
+                    <p className="text-base sm:text-lg text-gray-700 italic font-serif leading-relaxed">
                       "Une économie moderne ne saurait se concevoir sans
                       l’existence d’un secteur industriel performant. Nous
                       disposons d’un Plan Directeur d’industrialisation qui
@@ -216,10 +216,10 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-black text-gray-900 mb-6 uppercase">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 mb-6 uppercase">
                 Un catalyseur de réussite
               </h3>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
                 Les <strong>Cameroon Business Awards (CBA)</strong> sont une
                 initiative dédiée à la promotion de l’entrepreneuriat et du{" "}
                 <strong>Made in Cameroon</strong>. Notre mission est de
@@ -227,7 +227,7 @@ export default function AboutPage() {
                 entreprises innovantes qui contribuent à la transformation
                 économique du Cameroun.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
                 Créé par <strong>Africa Business Solutions</strong>, le CBA
                 constitue une plateforme nationale de reconnaissance,
                 d’accompagnement et de mise en réseau des entrepreneurs,
@@ -263,7 +263,7 @@ export default function AboutPage() {
               <div className="bg-[#007A5E] p-8 rounded-[2rem] text-white shadow-xl flex flex-col justify-between aspect-square">
                 <Target size={40} className="mb-4 text-[#FCD116]" />
                 <div>
-                  <h4 className="text-2xl font-black mb-2">VISION</h4>
+                <h4 className="text-lg sm:text-xl font-black mb-2">VISION</h4>
                   <p className="text-sm opacity-80 leading-relaxed">
                     Émergence d’une économie forte, compétitive et autonome.
                   </p>
@@ -272,7 +272,7 @@ export default function AboutPage() {
               <div className="bg-[#CE1126] p-8 rounded-[2rem] text-white shadow-xl flex flex-col justify-between aspect-square mt-12">
                 <TrendingUp size={40} className="mb-4 text-[#FCD116]" />
                 <div>
-                  <h4 className="text-2xl font-black mb-2">MISSION</h4>
+                <h4 className="text-lg sm:text-xl font-black mb-2">MISSION</h4>
                   <p className="text-sm opacity-80 leading-relaxed">
                     Révéler et accompagner les entrepreneurs à fort impact.
                   </p>
@@ -319,7 +319,7 @@ export default function AboutPage() {
                   className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md"
                 />
                 <div>
-                  <h4 className="text-xl font-bold">M. ALAMINE OUSMANE MEY</h4>
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold">M. ALAMINE OUSMANE MEY</h4>
                   <p className="text-xs text-[#007A5E] font-bold uppercase">
                     Ministre de l'Économie
                   </p>
@@ -346,7 +346,7 @@ export default function AboutPage() {
                   className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md"
                 />
                 <div>
-                  <h4 className="text-xl font-bold">
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold">
                     M. Achille BASSILEKIN III
                   </h4>
                   <p className="text-xs text-[#007A5E] font-bold uppercase">
@@ -410,7 +410,7 @@ export default function AboutPage() {
                 className="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-center border border-white/20"
               >
                 <stat.icon className="mx-auto mb-4 text-[#FCD116]" size={40} />
-                <p className="text-4xl font-black mb-2">{stat.value}</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl font-black mb-2">{stat.value}</p>
                 <p className="text-[#FCD116] font-bold uppercase text-xs tracking-widest">
                   {stat.label}
                 </p>
@@ -420,7 +420,7 @@ export default function AboutPage() {
           </div>
 
           <div className="bg-white/5 rounded-[3rem] p-8 md:p-12 border border-white/10">
-            <h3 className="text-3xl font-black mb-8 uppercase text-center">
+            <h3 className="text-2xl sm:text-3xl font-black mb-8 uppercase text-center">
               Ce que nous faisons
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -440,7 +440,7 @@ export default function AboutPage() {
                       strokeWidth={4}
                     />
                   </div>
-                  <span className="text-lg font-medium">{item}</span>
+                  <span className="text-base sm:text-lg font-medium">{item}</span>
                 </div>
               ))}
             </div>
@@ -457,16 +457,16 @@ export default function AboutPage() {
 
           <div className="bg-gray-50 rounded-[3rem] overflow-hidden shadow-2xl border border-gray-100">
             <div className="flex flex-col lg:flex-row">
-              <div className="w-full lg:w-1/3 h-[500px] lg:h-auto overflow-hidden">
+              <div className="w-full lg:w-1/3 h-[400px] sm:h-[500px] lg:h-full min-h-[400px] overflow-hidden">
                 <img
                   src="https://cameroonbusinessawards.org/wp-content/uploads/2024/11/Desire-Makan-II.jpeg"
                   alt="Désire Makan II"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="w-full lg:w-2/3 p-12 md:p-16 flex flex-col justify-center">
                 <div className="mb-6">
-                  <h3 className="text-4xl font-black text-gray-900 mb-2 uppercase">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 mb-2 uppercase">
                     Désire Makan II
                   </h3>
                   <div className="space-y-1">
@@ -479,10 +479,10 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <h4 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3 italic">
+                <h4 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 mb-4 flex items-center gap-3 italic">
                   "Un visionnaire engagé pour l'émergence"
                 </h4>
-                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
                   Entrepreneur et fondateur de{" "}
                   <strong>Africa Business Solutions</strong>, Désire Makan II
                   est le moteur derrière les Cameroon Business Awards. Avec une
@@ -520,20 +520,26 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="bg-white p-12 rounded-[3rem] shadow-2xl border-4 border-[#FCD116]"
           >
-            <h2 className="text-4xl font-black text-gray-900 mb-6 uppercase">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 mb-6 uppercase">
               Rejoignez l'Élite Entrepreneuriale
             </h2>
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
               Que vous soyez entrepreneur, partenaire ou investisseur, votre
               place est parmi nous pour bâtir le Cameroun de demain.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <button className="bg-[#007A5E] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-opacity-90 shadow-xl transition-all transform hover:-translate-y-1">
+              <a 
+                href="/contact"
+                className="bg-[#007A5E] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-opacity-90 shadow-xl transition-all transform hover:-translate-y-1 inline-block"
+              >
                 Devenir Partenaire
-              </button>
-              <button className="bg-[#CE1126] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-opacity-90 shadow-xl transition-all transform hover:-translate-y-1">
+              </a>
+              <a 
+                href="/awards"
+                className="bg-[#CE1126] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest hover:bg-opacity-90 shadow-xl transition-all transform hover:-translate-y-1 inline-block"
+              >
                 Participer aux Awards
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
