@@ -179,7 +179,7 @@ export default function HomePage() {
               alt={slide.title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 z-20 flex flex-col justify-center md:justify-end pb-16 md:pb-20">
+            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center md:justify-end md:items-start pb-16 md:pb-20">
               <div className="max-w-7xl mx-auto px-4 w-full">
                 <div className="max-w-2xl">
                   <div className="flex items-center space-x-3 mb-6">
