@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "motion/react";
 import {
   Calendar,
   Image as ImageIcon,
@@ -100,15 +102,41 @@ const EDITIONS = [
 export default function EditionsPage() {
   return (
     <div className="pt-20">
-      <section className="bg-gray-50 py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-[#1A1A1A]">
-            Historique des <span className="text-[#008751]">Éditions</span>
-          </h1>
-          <p className="text-xl text-gray-600">
+      {/* Hero Section */}
+      <section className="relative h-[60vh] md:h-[70vh] pt-48 pb-24 bg-[#007A5E]">
+        <div className="absolute inset-0 opacity-10">
+          <img
+            src="/slider1.png"
+            className="w-full h-full object-cover"
+            alt="Pattern"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center justify-center h-full">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="mb-8"
+          >
+            <span className="bg-[#FCD116] text-[#007A5E] px-6 py-2 rounded-full font-black text-sm uppercase tracking-widest shadow-xl">
+              Éditions Passées
+            </span>
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight"
+          >
+            Historique des <span className="text-[#FCD116]">Éditions</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="mt-6 text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl"
+          >
             Revivez les moments forts qui ont marqué le Cameroon Business Awards
             depuis sa création.
-          </p>
+          </motion.p>
         </div>
       </section>
 
