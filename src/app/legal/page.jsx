@@ -24,7 +24,7 @@ export default function LegalPage() {
           <ul className="list-disc pl-6 text-gray-600 space-y-2">
             <li>Siège social : Rue de l'Indépendance, Douala, Cameroun</li>
             <li>Directeur de la publication : Le Promoteur CBA</li>
-            <li>Contact : info@cameroonbusinessawards.cm</li>
+            <li>Contact : contact@cameroonbusinessawards.org</li>
           </ul>
         </section>
 

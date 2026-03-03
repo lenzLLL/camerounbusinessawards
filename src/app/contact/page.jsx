@@ -47,7 +47,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1">Téléphone</h3>
                   <p className="text-gray-600">
-                    +237 600 000 000 / +237 200 000 000
+                    +237 657 342 834 / (237) 242 234 134
                   </p>
                 </div>
               </div>
@@ -59,9 +59,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1">Email</h3>
                   <p className="text-gray-600">
-                    info@cameroonbusinessawards.cm
-                    <br />
-                    support@cameroonbusinessawards.cm
+                    contact@cameroonbusinessawards.org
                   </p>
                 </div>
               </div>
@@ -76,7 +74,7 @@ export default function ContactPage() {
               <p className="text-gray-400">
                 Nous répondons généralement en moins de 24 heures ouvrées.
               </p>
-              <button className="bg-[#008751] text-white px-6 py-3 rounded-xl font-bold">
+              <button className="w-full bg-[#008751] text-white px-6 py-3 rounded-xl font-bold">
                 Contacter WhatsApp
               </button>
             </div>

@@ -4,11 +4,9 @@ import {
   Phone,
   MapPin,
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
   Send,
-  Youtube,
 } from "lucide-react";
 
 export default function Footer() {
@@ -146,12 +144,15 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#E73138] flex-shrink-0" />
-                <p className="text-gray-300 text-sm">+237 6XX XXX XXX</p>
+                <div className="text-gray-300 text-sm">
+                  <p>+237 657 342 834</p>
+                  <p>(237) 242 234 134</p>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#E73138] flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
-                  contact@cba-cameroon.com
+                  contact@cameroonbusinessawards.org
                 </p>
               </div>
             </div>
@@ -197,34 +198,28 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61552191602008"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#008751] flex items-center justify-center transition-all hover:scale-110"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="#"
-              className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#E73138] flex items-center justify-center transition-all hover:scale-110"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/groups/12902655/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#008751] flex items-center justify-center transition-all hover:scale-110"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/cameroon_business_awards?igsh=MWdpcmIxc25hcXkwNw=="
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#E73138] flex items-center justify-center transition-all hover:scale-110"
             >
               <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#008751] flex items-center justify-center transition-all hover:scale-110"
-            >
-              <Youtube className="w-5 h-5" />
             </a>
           </div>
 
