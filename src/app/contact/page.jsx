@@ -1,7 +1,64 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
+emailjs.init('lb_BgoUzA_095QY5J');
 
 export default function ContactPage() {
+   const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    domain: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
+
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitMessage("");
+
+    // Validation des champs obligatoires
+    if (!formData.name || !formData.email || !formData.phone || !formData.subject) {
+      setSubmitMessage("Veuillez remplir tous les champs obligatoires.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const messageContent = `
+Nom: ${formData.name}
+Email: ${formData.email}
+Téléphone: ${formData.phone}
+Sujet: ${formData.subject}
+Site Web: ${formData.domain || "Non fourni"}
+Message: ${formData.message || "Aucun message additionnel"}
+      `;
+
+      const templateParams = {
+        email: "lenzyounda@gmail.com",
+        name: messageContent,
+      };
+
+      const result = await emailjs.send(
+        "service_lnnc46d",
+        "template_te8t1r7",
+        templateParams
+      );
+
+      setSubmitMessage("Votre message a été envoyé avec succès !");
+      setFormData({ name: "", phone: "", domain: "", subject: "", message: "", email: "" });
+    } catch (error) {
+      console.error(error);
+      setSubmitMessage("Une erreur est survenue. Veuillez réessayer.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="pt-20">
       <section className="bg-gray-50 py-24 px-6">
@@ -82,7 +139,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-gray-100">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700">
@@ -90,6 +147,9 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
                     placeholder="Ex: Jean Dupont"
                     className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]"
                   />
@@ -100,6 +160,9 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="jean@exemple.com"
                     className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]"
                   />
@@ -110,6 +173,9 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     placeholder="+237 6XX XXX XXX"
                     className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]"
                   />
@@ -120,6 +186,9 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="url"
+                    name="domain"
+                    value={formData.domain}
+                    onChange={(e) => setFormData({...formData, domain: e.target.value})}
                     placeholder="https://example.com"
                     className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]"
                   />
@@ -127,11 +196,16 @@ export default function ContactPage() {
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700">Sujet</label>
-                <select className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]">
-                  <option>Devenir Sponsor</option>
-                  <option>Candidature</option>
-                  <option>Partenariat Média</option>
-                  <option>Autre</option>
+                <select
+                  name="subject"
+                  value={formData.subject}
+                  onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                  className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]"
+                >
+                  <option value="Devenir Sponsor">Devenir Sponsor</option>
+                  <option value="Candidature">Candidature</option>
+                  <option value="Partenariat Média">Partenariat Média</option>
+                  <option value="Autre">Autre</option>
                 </select>
               </div>
               <div className="space-y-2">
@@ -139,7 +213,10 @@ export default function ContactPage() {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   rows="5"
+                  value={formData.message}
+                  onChange={(e) => setFormData({...formData, message: e.target.value})}
                   placeholder="Votre message ici..."
                   className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#008751]"
                 ></textarea>
